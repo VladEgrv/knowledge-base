@@ -1,7 +1,10 @@
-col = 3
-row = 2
-matrix = []
-for i in range(col):
-    matrix.append([0] * row)
+rows, cols = 3, 4                # rows - количество строк, cols - количество столбцов
 
-print(matrix)
+matrix  = [[277, -930, 11, 0],
+           [9, 43, 6, 87],
+           [4456, 8, 290, 7]]
+
+for r in range(rows):
+    for c in range(cols):
+        print(str(matrix[r][c]).rjust(6), end='')
+    print()
